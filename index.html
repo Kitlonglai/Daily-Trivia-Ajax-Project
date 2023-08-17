@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,45 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header>
-  </header>
   <main>
+    <header>
+      <h2>Daily Trivia</h2>
+    </header>
+    <div class="menu">
+      <div class="settings">
+        <h3>Choose your category and difficulty!</h3>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="">All categories</option>
+          <option value="9">General Knowledge</option>
+          <option value="11">Film</option>
+          <option value="14">Television</option>
+          <option value="23">History</option>
+          <option value="12">Music</option>
+        </select>
+        <div class="selection">
+          <label for="difficulty">Difficulty</label>
+          <label class="container">Easy
+            <input type="radio" name="radio" id="easy">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Medium
+            <input type="radio" name="radio" id="medium">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Hard
+            <input type="radio" name="radio" id="hard">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <button id="start" class="submit">Start</button>
+      </div>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
